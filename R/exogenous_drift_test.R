@@ -1,4 +1,4 @@
-source("R/sample_distribution.R")
+source("R/utils/sample_distribution.R")
 set.seed(7292026)
 
 n <- 1e6
