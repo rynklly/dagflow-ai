@@ -12,7 +12,7 @@ for(r2 in latent_r2){
     for (b in bounds) {
         r2s <- numeric(reps)
         for (r in seq_len(reps)){
-            X <- rnorm(n)
+            X <- matrix(rnorm(n), ncol = 1)
             y <- sample_normal(n, X=X, beta1=1, beta0=0, sd=sig, min = -b, max = b)
             r2s[r] <- summary(lm(y ~ X))$r.squared
         }
