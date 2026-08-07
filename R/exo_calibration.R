@@ -34,7 +34,7 @@ calibrate_exo <- function(mu_t, var_t, a, b){
          termcd = sol$termcd, fvec = sol$fvec)
 }
 
-print(calibrate_exo(3, 4  -50, 50))
+print(calibrate_exo(3, 4, -50, 50))
 print(calibrate_exo(0, 0.5515244, -1.5, 1.5))
 print(calibrate_exo(1.027556, 0.2214789, 0, 3))
 
