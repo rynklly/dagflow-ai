@@ -1,4 +1,4 @@
-source("R/exo_calibration.R")
+source("R/truncated_normal_calibration/trunc_norm_moments.R")
 
 print(m_tn(c(-1, 0, 1), 0.8, -1.5, 1.5))
 
